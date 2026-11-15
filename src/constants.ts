@@ -33,5 +33,10 @@ export const MEMBERS = [
         name: 'Cheshire',
         color: 'rgb(19, 228, 0)',
         joinedDate: '11-08-2026'
+    },
+    {
+        name: 'Jordan',
+        color: '#FFF',
+        joinedDate: '11-15-2026'
     }
 ] as const;
