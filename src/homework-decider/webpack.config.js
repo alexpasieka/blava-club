@@ -1,13 +1,13 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './index.ts',
     module: {
         rules: [
             {
                 test: /\.ts/,
                 use: 'ts-loader',
-                include: [path.resolve(__dirname, 'src')]
+                include: [__dirname]
             }
         ]
     },
@@ -16,6 +16,6 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public/homework-decider')
+        path: path.resolve('../../public/homework-decider')
     }
 }

@@ -1,0 +1,20 @@
+{
+  "name": "blava-club-homework-decider",
+  "version": "1.0.0",
+  "description": "Decides the homework suggester for the following week of Blava Club",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "papaparse": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "@types/papaparse": "^5.5.2",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3",
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1"
+  }
+}
