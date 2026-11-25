@@ -3,8 +3,8 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import path from 'path';
 
-const hostname = '0.0.0.0';
-const port = 80;
+const hostname = 'localhost';
+const port = 3000;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,7 +19,7 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-    const requestUrl = new URL(req.url, `http://${hostname}`);
+    const requestUrl = new URL(req.url, `https://${hostname}`);
     let pathname;
 
     try {
@@ -64,5 +64,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running at https://${hostname}:${port}/`);
 });
