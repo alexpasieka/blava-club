@@ -19,7 +19,7 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-    const requestUrl = new URL(req.url, `https://${hostname}`);
+    const requestUrl = new URL(req.url, `http://${hostname}`);
     let pathname;
 
     try {
@@ -64,5 +64,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Server running at https://${hostname}:${port}/`);
+    console.log(`Server running at http://${hostname}:${port}/`);
 });
